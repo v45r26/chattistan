@@ -1,0 +1,136 @@
+@font-face
+{
+	font-family: Poppins;
+	src: url('../font/Poppins-Regular.ttf');
+}
+@font-face
+{
+	font-family: DS-DIGIB;
+	src: url('../font/DS-DIGIB.ttf');
+}
+@font-face
+{
+	font-family: JosefinSans;
+	src: url('../font/JosefinSans-Regular.ttf');
+}
+@font-face
+{
+	font-family: Roboto;
+	src: url('../font/Roboto-Regular.ttf');
+}
+*
+{
+    font-family: Poppins;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background: rgb(0 0 0 / 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.wrapper
+{
+	border: none;
+/* 	margin: 10vh 0; */
+	background: #fff;
+	width: 450px;
+	border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+				0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.wrapper .form
+{
+	padding: 16px 30px;
+}
+.wrapper .form header
+{
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e2e1e1;
+}
+.wrapper .form form .error-txt
+{
+	color: #721c24;
+	background: #f8d7da;
+	padding: 5px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #f5c6cb;
+ 	display: none; 
+}
+.wrapper .form form .field
+{
+	border: 0px solid #000;
+	display:flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 10px;
+}
+.wrapper .form form .field label
+{
+	margin-bottom: 2px;
+	font-size: 16px;
+}
+.wrapper .form form .field.input-box .input-field
+{
+	height: 35px;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.wrapper .form form .field.button
+{
+	padding: 10px 0;
+}
+.wrapper .form form .field.button input
+{
+	height: 35px;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 0px solid #333;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+}
+.form form .field i
+{
+	position: absolute;
+	right: 15px;
+	color: #ccc;
+	top: 70%;
+	transform: translateY(-45%);
+	cursor: pointer;
+}
+.form form .field i.active::before
+{
+	color: #333;
+	content: '\f070';
+}
+.wrapper .form .link
+{
+	text-align: center;
+	color: #333;
+	font-weight: 00;
+}
+.wrapper .form .link a
+{
+	color: #333;
+}
+.wrapper .form .link a:hover
+{
+	color: #111;
+	text-decoration: underline;
+}
